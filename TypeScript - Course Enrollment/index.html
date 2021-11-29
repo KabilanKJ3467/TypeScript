@@ -1,0 +1,62 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="Styles/styles.css">
+      <script type="text/Javascript" src="Script/script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="maindiv">
+         <h2>Welcome to Syncfusion's Course Enrollment Portal.</h2>
+         <button  onclick="NewUser()">New User Registration</button>
+         <button onclick="ExistingUser()">Existing User Login</button>
+        </div>
+
+        <div id="registrationdiv">
+            <h2>User Registration Page</h2>
+         <forms>
+             <label>Name:</label><input id="namebox" type="text"><br><br>
+             <label>Age:</label><input id="agebox" type="number"><br><br>
+             <label>Mobile Number:</label><input id="mobilenumberbox" type="text"><br><br>
+             <button onclick="Register()"> Register</button><br><br>
+         </forms>
+        </div>
+
+        <div id="logindiv" >
+            <h2>Login Page</h2>
+            <forms>
+               <label>User Id:</label> <input id="useridbox" type="text" ><br><br>
+               <button onclick="Login()"> Login</button>
+            </forms>
+
+        </div>
+
+        <div id="userhomediv">
+            <h2>User Home Page</h2>
+            <forms>
+             <label>Available Courses:</label>  
+              <select onmouseup="AvailableCourses()">
+                <option> C Sharp</option>
+                <option> HTML</option>
+                <option> CSS</option>
+                <option> JavaScript</option>
+                <option> TypeScript</option>
+             </select>
+
+             <label>Enrolled Courses:</label>  
+              <select>
+                <option id="option1"></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+            </select><br><br>
+            <label>Number of Days Required:</label>
+            <input type="numbers" id="numberofdaysbox">
+            <button id="enrollbutton" onclick="">Enroll</button>
+            </forms>
+
+        </div>
+
+    </body>
+</html>
